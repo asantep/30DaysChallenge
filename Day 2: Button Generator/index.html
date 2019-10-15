@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Button Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <main>
+            <!-- <div id="generated_script">
+                <img src="https://img.icons8.com/material/20/000000/close-window--v1.png">
+                <div id="html_data">
+                    <h2>HTML:</h2>
+                    <br>
+                    <p class="htmlText">
+                        
+                    </p>
+                    <h2>CSS:</h2>
+                    <br>
+                    <p class="cssText">
+
+                    </p>
+                </div>
+            </div> -->
+            <div id="output">
+                <input type="submit" id="output_view" value="Default Label">
+            </div>
+            <div id="controls">
+                <section class="control_section">
+                    <div id="div_label">
+                        <label for="button_label">Button Label</label>
+                        <input type="text" name="button_input" id="button_input" required>
+                    </div>
+                    <div id="div_font_size">
+                        <label for="font_size_label">Font Size</label>
+                        <input type="number" min="8" max="50" name="font_size_input" id="font_size_input" step="1" value="16">
+                    </div>
+                    <div id="div_font_color">
+                        <label for="font_color_label">Font Color</label>
+                        <input type="color" name="font_color_selector" id="font_color_selector" value="#000000">
+                    </div>
+                </section>
+                <section class="control_section">
+                    <div id="div_padding">
+                        <label for="padding_label">Padding Top-Right-Bottom-Left</label>
+                        <input type="number" name="top_input" class="pad_inputs" id="top_input" value="1" min="0" max="24"> - 
+                        <input type="number" name="right_input" class="pad_inputs" id="right_input" value="6" min="0" max="48"> -
+                        <input type="number" name="bottom_input" class="pad_inputs" id="bottom_input" value="1" min="0" max="24"> -
+                        <input type="number" name="left_input" class="pad_inputs" id="left_input" value="6" min="0" max="48">
+                    </div>
+                    <div id="div_background_color">
+                        <label for="background_color_label">Background Color</label>
+                        <input type="color" name="background_color_selector" id="background_color_selector" value="#dddddd">
+                    </div>
+                </section>
+                <section class="control_section">
+                    <div id="div_border_color">
+                        <label for="border_color_label">Border Color</label>
+                        <input type="color" name="border_color_selector" id="border_color_selector" value="#dddddd">
+                    </div>
+                    <div id="div_border_width">
+                        <label for="border_width_label">Border Width</label>
+                        <input type="number" name="border_width_input" id="border_width_input" value="0" min="0" max="50">
+                    </div>
+                    <div id="div_border_radius">
+                        <label for="border_radius_label">Border Radius</label>
+                        <input type="number" name="border_radius_input" id="border_radius_input" value="0" min="0" max="50">
+                    </div>                    
+                </section>
+            </div>
+            <div id="generator">
+                <input type="submit" id="submit" value="Generate Code">
+            </div>
+        </main>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

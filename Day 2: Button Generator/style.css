@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#container{
+    width: 75%;
+    text-align: justify;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    padding: 2px 16px;
+    margin: 90px auto;
+    border-radius: 8px;
+}
+#output{
+    border-bottom: 1px solid #999999;
+    text-align: center;
+    margin-top: 25px;
+    padding: 25px 0;
+}
+#controls{
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.control_section{
+    display: flex;
+    flex-direction: row;
+    margin: 8px;
+}
+#div_label{
+    border-right: 1px solid #999999;
+    padding-right: 15px;
+    margin-bottom: 8px;
+}
+#button_input{
+    outline: none;
+    font-size: 16px;
+    margin: 3px;
+}
+#div_font_size, #div_border_width{
+    border-right: 1px solid #999999;
+    padding: 0 15px;
+    margin-bottom: 8px;
+}
+#font_size_input,#border_width_input,#border_radius_input{
+    outline: none;
+    font-size: 14px;
+    margin: 3px;
+}
+#div_font_color, #div_background_color, #div_border_radius{
+    padding-left: 15px;
+    margin-bottom: 8px;
+}
+#font_color_selector{
+    outline: none;
+    font-size: 16px;
+    margin: 3px;
+}
+#div_padding,#div_border_color{
+    border-right: 1px solid #999999;
+    padding-right: 15px;
+    margin-bottom: 8px;
+}
+.pad_inputs{
+    width: 50px;
+    outline: none;
+    font-size: 14px;
+    margin: 3px;
+}
+#generator{
+    text-align: center;
+    margin-bottom: 15px;
+}
+#submit{
+    outline: none;
+    padding: 5px
+}
+#generated_script{
+    width: 55%;
+    text-align: justify;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    padding: 2px 16px;
+    margin: 90px auto;
+    border-radius: 8px;
+}
