@@ -74,20 +74,31 @@ border_radius_input.addEventListener('input',function(){
     output_view.style.borderRadius =  `${borderRadius}${'px'}`;
 });
 
-// let cssData = {
-//     title: '#custom-btn',
-//     description: {
-//         padding: `${pTop}${"px"} ${pRight}${"px"} ${pBottom}${"px"} ${pLeft}${"px"}`,
-//         background_color: bgColor,
-//         border_color: borderColor,
-//     }
-// }
+let cssData = {
+    title: '#custom-btn',
+    description: {
+        padding: `padding: ${pTop}${"px"} ${pRight}${"px"} ${pBottom}${"px"} ${pLeft}${"px"} `,
+        background_color: `background-color: ${bgColor} `,
+        border_color: `border-color: ${borderColor} `,
+        border_radius: `border-radius: ${borderRadius}${"px"} `,
+        border_width: `border-width: ${borderWidth}${"px"} `,
+        font_size: `font-size: ${fontSize}${"px"} `,
+        font_color: `font-color: ${fontColor}`
+    }
+}
 
-// let html = document.getElementById('html_data');
-// let text_data = document.querySelector('.htmlText');
-// console.log(document.getElementById('output_view'));
+let css_data = document.querySelector('.cssText');
+css_data.textContent = `${cssData.title}: ${cssData.description.padding}- ${cssData.description.background_color}- ${cssData.description.border_color}- ${cssData.description.border_radius}- ${cssData.description.border_width}- ${cssData.description.font_size}- ${cssData.description.font_color}`;
 
-// console.log(output_view.t);
+let text_data = document.querySelector('.htmlText');
+text_data.textContent = document.getElementById('output_view').outerHTML;
 
-// text_data.innerHTML = output_view.nodeValue
+let gen_script = document.getElementById('generated_script');
+submit.addEventListener('click', function(){
+    gen_script.style.display = 'block';    
+});
 
+let close = document.querySelector('.cls_btn');
+close.addEventListener('click',function(){
+    gen_script.style.display = 'none';
+});
