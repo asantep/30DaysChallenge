@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Word Character Counter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="intro">
+        <h2>WORD CHARACTER COUNTER</h2>
+    </header>
+    <main id="count_wrapper">
+        <div id="actions">
+            <div id="characters">
+                <label for="character">CHARACTERS:</label>
+                <span id="character_count">0</span>
+            </div>
+            <div id="words">
+                <label for="word">WORDS:</label>
+                <span id="word_count">0</span>
+            </div>
+            <div id="whitespaces">
+                <label for="whitespace">WHITESPACES:</label>
+                <span id="whitespace_count">0</span>
+            </div>
+            <div id="lines">
+                <label for="line">LINES:</label>
+                <span id="line_count">0</span>
+            </div>
+        </div>
+        <div id="text_input">
+            <textarea type="text" name="text_data" id="text_data" placeholder="Type or paste text here"></textarea>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
