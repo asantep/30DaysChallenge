@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    background-image: url('https://c4.wallpaperflare.com/wallpaper/804/498/504/arcanine-minimalism-orange-background-pokemon-growlithe-illustration-wallpaper-a92068ed21da6d4bb647780f4061968d.jpg');
+    background-size: cover;
+    overflow: hidden;
+    font-family: 'Jomolhari', serif;
+}
+#main_wrapper{
+    margin: 190px auto;
+}
+.poke{
+    width: 25%;
+    min-height: 1vh;
+    margin: 15px auto;
+}
+.menu_info{
+    display: flex;
+    padding: 4px 0 4px 10px;
+    color: cornsilk;
+    background: rgba(255, 123, 0, 0.808);
+    border-radius: 6px;
+    font-weight: lighter;
+    font-size: 14px;
+    letter-spacing: 1.5px;
+}
+.menu_info_include{
+    display: flex;
+    align-content: space-between;
+    padding: 4px 0 4px 6px;
+    color: cornsilk;
+    background: rgba(255, 123, 0, 0.808);
+    font-weight: lighter;
+    font-size: 14px;
+    letter-spacing: 1.5px;
+    border-top-right-radius: 6px;
+    border-top-left-radius: 6px;
+}
+
+.menu_info img{
+    margin: 5px auto 0 auto;
+    padding-left: 128px;
+}
+.poke_items{
+    background-color: cornsilk;
+    padding: 8px 16px;
+    border-bottom-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+    display: none;
+}
+.poke_items_include{
+    background-color: cornsilk;
+    padding: 8px 16px;
+    border-bottom-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+    display: block;
+}
+
+@media only screen and (min-width: 320px){
+  
+}
